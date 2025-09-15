@@ -1,0 +1,159 @@
+/* ---------------------------
+   Reset + Base Styles
+---------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+  background: #1e293b; /* deep slate */
+  color: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1.5;
+}
+
+/* ---------------------------
+   Layout Containers
+---------------------------- */
+header {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #f1f5f9;
+}
+
+header .subtitle {
+  color: #94a3b8;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* ---------------------------
+   Turn Indicator
+---------------------------- */
+#turn-indicator {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fbbf24; /* amber accent */
+  padding: 0.5rem 1rem;
+  background: #334155;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* ---------------------------
+   Game Board
+---------------------------- */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.8rem;
+  padding: 1rem;
+  background: #334155;
+  border-radius: 1rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 8rem;
+  width: 8rem;
+  border-radius: 0.6rem;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ef4444; /* red accent for X/O */
+  background: #f1f5f9;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.box:hover {
+  border-color: #94a3b8;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ---------------------------
+   Buttons
+---------------------------- */
+button {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  background: #2563eb;
+  color: #fff;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+#reset-btn,
+#new-btn {
+  margin-top: 1rem;
+}
+
+/* ---------------------------
+   Winner Message
+---------------------------- */
+.msg-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(30, 41, 59, 0.95);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  z-index: 10;
+}
+
+#msg {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #22c55e; /* green for winner text */
+}
+
+.hide {
+  display: none;
+}
+
+/* ---------------------------
+   Footer
+---------------------------- */
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  color: #94a3b8;
+}

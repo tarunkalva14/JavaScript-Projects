@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic-Tac-Toe Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Tic Tac Toe</h1>
+    <p class="subtitle">A simple, fun game</p>
+  </header>
+
+  <!-- Winner message -->
+  <div class="msg-container hide" aria-live="polite">
+    <p id="msg">Winner</p>
+    <button id="new-btn" aria-label="Start a new game">🔄 New Game</button>
+  </div>
+
+  <main>
+    <!-- Turn indicator -->
+    <div id="turn-indicator" role="status" aria-live="polite">
+      Player X's turn
+    </div>
+
+    <!-- Game board -->
+    <div class="container">
+      <div class="board" role="grid" aria-label="Tic Tac Toe Board">
+        <button class="box" role="gridcell" aria-label="Cell 1"></button>
+        <button class="box" role="gridcell" aria-label="Cell 2"></button>
+        <button class="box" role="gridcell" aria-label="Cell 3"></button>
+        <button class="box" role="gridcell" aria-label="Cell 4"></button>
+        <button class="box" role="gridcell" aria-label="Cell 5"></button>
+        <button class="box" role="gridcell" aria-label="Cell 6"></button>
+        <button class="box" role="gridcell" aria-label="Cell 7"></button>
+        <button class="box" role="gridcell" aria-label="Cell 8"></button>
+        <button class="box" role="gridcell" aria-label="Cell 9"></button>
+      </div>
+    </div>
+
+    <!-- Reset button -->
+    <button id="reset-btn" aria-label="Reset current game">♻ Reset Game</button>
+  </main>
+
+  <footer>
+    <p>© 2025 Tic Tac Toe Project | Built by <strong>You</strong></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
