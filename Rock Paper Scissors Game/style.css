@@ -1,0 +1,114 @@
+/* General Layout */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+/* Game container */
+.game-container {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  width: 90%;
+  max-width: 500px;
+}
+
+header h1 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+/* Choices */
+.choices {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.choice {
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.choice img {
+  width: 80px;
+  height: 80px;
+}
+
+.choice:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #ffeb3b;
+}
+
+/* Scoreboard */
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin: 1.5rem 0;
+}
+
+.score {
+  text-align: center;
+}
+
+.score-value {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.score-label {
+  font-size: 1rem;
+}
+
+/* Messages */
+.message #msg {
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+/* Computer choice highlight */
+.highlight {
+  box-shadow: 0 0 20px 5px #ffeb3b;
+  transform: scale(1.15);
+  transition: all 0.3s ease;
+}
+
+/* Reset Button */
+.controls {
+  margin-top: 1.5rem;
+}
+
+#reset-btn {
+  background: #ffeb3b;
+  color: #333;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 0.7rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+#reset-btn:hover {
+  background: #ffe033;
+  transform: scale(1.05);
+}
