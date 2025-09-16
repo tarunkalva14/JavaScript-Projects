@@ -16,7 +16,8 @@ It includes **interactive browser games** demonstrating skills in **DOM manipula
 - Example: `tic-tac-toe/index.html`  
 
 **Screenshot:**  
-![Tic-Tac-Toe Screenshot](Tic-Tac-Toe Game/Screenshot (41).png)  
+![Tic-Tac-Toe Result](Tic-Tac-Toe%20Game/Result.png)
+  
 
 ---------------------------------------------------------------------------------------------------------------------------------
 ### ✊✋✌ Rock-Paper-Scissors Game  
