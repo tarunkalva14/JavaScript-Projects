@@ -27,7 +27,8 @@ It includes **interactive browser games** demonstrating skills in **DOM manipula
 - Example: `rock-paper-scissors/index.html`  
 
 **Screenshot:**  
-![Rock Paper Scissors Screenshot]()  
+![Rock Paper Scissors Result](Rock%20Paper%20Scissors%20Game/Result.png)
+ 
 
 
 ----------------------------------------------------------------------------------------------------------------------------------
